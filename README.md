@@ -18,7 +18,7 @@ array(
 ),
 ```
 
-## Screenshot
+## Screenshots
 
 ![Image](screenshot-1.png?raw=true)
 
