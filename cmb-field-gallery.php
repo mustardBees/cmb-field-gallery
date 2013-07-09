@@ -18,7 +18,7 @@ define( 'PW_GALLERY_URL', plugin_dir_url( __FILE__ ) );
 function pw_gallery_field( $field, $meta ) {
 	wp_enqueue_script( 'pw_gallery_init', PW_GALLERY_URL . 'js/script.js', array( 'jquery' ), null );
 
-    if ( ! empty( $meta ) ) {
+	if ( ! empty( $meta ) ) {
 		$meta = implode( ',', $meta );
 	}
 
