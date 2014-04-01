@@ -15,6 +15,7 @@ array(
 	'button' => 'Manage gallery', // Optionally set button label
 	'id'   => $prefix . 'gallery_images',
 	'type' => 'pw_gallery',
+	'sanitization_cb' => 'pw_gallery_field_sanitise',
 ),
 ```
 
