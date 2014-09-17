@@ -23,13 +23,13 @@ function pw_gallery_field( $field, $meta ) {
 	}
 
 	echo '<div class="pw-gallery">';
-	echo '	<input type="hidden" id="' . $field['id'] . '" name="' . $field['id'] . '" value="' . $meta . '" />';
-	echo '	<input type="button" class="button" value="' . ( ! empty( $field['button'] ) ? $field['button'] : 'Manage gallery' ) . '" />';
+	echo '	<input type="hidden" id="' . $field->args( 'id' ) . '" name="' . $field->args( 'id' ) . '" value="' . $meta . '" />';
+	echo '	<input type="button" class="button" value="' . ( ! empty( $field->args( 'button' ) ) ? $field->args( 'button' ) : 'Manage gallery' ) . '" style="margin-left: 0;" />';
 	echo '</div>';
 
-	if ( ! empty( $field['desc'] ) ) echo '<p class="cmb_metabox_description">' . $field['desc'] . '</p>';
+	if ( ! empty( $field->args( 'desc' ) ) ) echo '<p class="cmb2-metabox-description">' . $field->args( 'desc' ) . '</p>';
 }
-add_filter( 'cmb_render_pw_gallery', 'pw_gallery_field', 10, 2 );
+add_filter( 'cmb2_render_pw_gallery', 'pw_gallery_field', 10, 2 );
 
 
 /**
