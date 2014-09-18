@@ -3,7 +3,7 @@
 Plugin Name: CMB Field Type: Gallery
 Plugin URI: https://github.com/mustardBees/cmb-field-gallery
 Description: Gallery field type for Custom Metaboxes and Fields for WordPress. Thanks to <a href="http://www.purewebsolutions.nl/">Roel Obdam</a> for the hard work <a href="http://goo.gl/RYj2w">figuring out the media library</a>.
-Version: 2.0.0
+Version: 2.0.1
 Author: Phil Wylie
 Author URI: http://www.philwylie.co.uk/
 License: GPLv2+
