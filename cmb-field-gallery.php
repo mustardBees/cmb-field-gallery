@@ -27,7 +27,8 @@ function pw_gallery_field( $field, $meta ) {
 	echo '	<input type="button" class="button" value="' . ( ! empty( $field->args( 'button' ) ) ? $field->args( 'button' ) : 'Manage gallery' ) . '" style="margin-left: 0;" />';
 	echo '</div>';
 
-	if ( ! empty( $field->args( 'desc' ) ) ) echo '<p class="cmb2-metabox-description">' . $field->args( 'desc' ) . '</p>';
+	$desc = $field->args( 'desc' );
+	if ( ! empty( $desc ) ) echo '<p class="cmb2-metabox-description">' . $desc . '</p>';
 }
 add_filter( 'cmb2_render_pw_gallery', 'pw_gallery_field', 10, 2 );
 
