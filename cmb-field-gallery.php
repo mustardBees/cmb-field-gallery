@@ -38,7 +38,7 @@ function pw_gallery_field( $field, $meta ) {
 	
 	foreach($ids as $id) { 
   
-				 echo '<li class="img-status">'. wp_get_attachment_image( $id, $img_size ) .'</li>';  
+		echo '<li class="img-status">'. wp_get_attachment_image( $id, $img_size ) .'</li>';  
 				 
  	}
 
