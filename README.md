@@ -50,7 +50,6 @@ array(
 
 ## To-do
 * Add a clear gallery button
-* Thumbnail previews
 
 ## Example front-end output
 
