@@ -18,10 +18,6 @@ define( 'PW_GALLERY_URL', plugin_dir_url( __FILE__ ) );
 function pw_gallery_field( $field, $meta ) {
 	wp_enqueue_script( 'pw_gallery_init', PW_GALLERY_URL . 'js/script.js', array( 'jquery' ), null );
 
-	if ( ! empty( $meta ) ) {
-		$meta = implode( ',', $meta );
-	}
-
 	echo '<div class="pw-gallery">';
 	echo '	<input type="hidden" id="' . $field->args( 'id' ) . '" name="' . $field->args( 'id' ) . '" value="' . $meta . '" />';
 	echo '	<input type="button" class="button" value="' . ( $field->args( 'button' ) ? $field->args( 'button' ) : 'Manage gallery' ) . '" style="margin-left: 0;" />';
@@ -36,7 +32,7 @@ add_filter( 'cmb2_render_pw_gallery', 'pw_gallery_field', 10, 2 );
 /**
  * Split CSV string into an array of values
  */
-function pw_gallery_field_sanitise( $meta_value, $field ) {
+function pw_gallery_field_sanitise( $meta_value ) {
 	if ( empty( $meta_value ) ) {
 		$meta_value = '';
 	} else {
