@@ -3,7 +3,6 @@
 		var instance = this;
 
 		$('input[type=button]', instance).click(function() {
-        console.log($('input[type=hidden]', instance).val())
 			var gallerysc = '[gallery ids="' + $('input[type=hidden]', instance).val() + '"]';
 			wp.media.gallery.edit(gallerysc).on('update', function(g) {
 				var id_array = [];
