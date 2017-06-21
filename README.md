@@ -1,6 +1,11 @@
 # CMB Field Type: Gallery
 
+## IMPORTANT - This is now no longer needed as a similar function exists in CMB2
+
+The feature is [file_list](https://github.com/CMB2/CMB2/wiki/Field-Types#file_list)
+
 ## Description
+
 
 Gallery field type for [CMB2](https://github.com/WebDevStudios/CMB2 "Custom Metaboxes and Fields for WordPress 2").
 
