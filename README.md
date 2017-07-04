@@ -44,6 +44,7 @@ array(
 	'button' => 'Manage gallery', // Optionally set button label
 	'id'   => $prefix . 'gallery_images',
 	'type' => 'pw_gallery',
+	'preview_size' => array( 150, 150 ),
 	'sanitization_cb' => 'pw_gallery_field_sanitise',
 ),
 ```
@@ -56,7 +57,6 @@ array(
 
 ## To-do
 * Add a clear gallery button
-* Thumbnail previews
 
 ## Example front-end output
 
