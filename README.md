@@ -1,8 +1,10 @@
-# CMB Field Type: Gallery
+# [DEPRECATED] CMB Field Type: Gallery
 
-## IMPORTANT - This is now no longer needed as a similar function exists in CMB2
+## IMPORTANT - this project is no longer supported
 
-The feature is [file_list](https://github.com/CMB2/CMB2/wiki/Field-Types#file_list)
+CMB2's [`file_list`](https://github.com/CMB2/CMB2/wiki/Field-Types#file_list) provides similar functionality and is probably the way to go.
+
+I've written a quick tool to [convert existing data from the `pw_gallery` to `file_list`](https://gist.github.com/mustardBees/fc4ffb920064d34f4f17) format.
 
 ## Description
 
